@@ -6,7 +6,7 @@ ENV TARGETPLATFORM=${TARGETPLATFORM:-linux/amd64}
 ARG TF_VER="1.1.7"
 
 # Install cdrkit for terraform cloud-init & useful packages
-RUN apk add --no-cache cdrkit curl git wget ansible python3 openssh
+RUN apk add --no-cache cdrkit curl git wget ansible ansible-lint python3 openssh
 
 WORKDIR /tmp
 
